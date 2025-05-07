@@ -1,0 +1,97 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import url('https://fonts.googleapis.com/css2?family=Indopak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Uthmanic+Script+Hafs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MeQuran&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap');
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Didot';
+    src: url('data:font/ttf;base64,PUT_YOUR_BASE64_HERE') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.custom-font {
+    font-family: 'Didot', serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Didot', serif;
+}
+
+html,
+
+/* styles.scss (or styles.css) */
+
+body {
+    color: rgb(51, 56, 60);
+    font-weight: 500;
+    font-family:'Didot', serif;
+    line-height: 17px;
+    letter-spacing: normal;
+    font-size: 0.875rem;
+}
+
+h2 {
+    font-size: 40px !important;
+    /* margin-bottom: 30px; */
+    color: #4e4d4d;
+    margin-top: 120px !important;
+}
+
+/* h2::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: #616161;
+    margin: 8px auto 0; 
+  } */
+  
+
+html,
+body {
+    height: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+
+    body,
+    input,
+    textarea,
+    button,
+    select,
+    .faux-select {
+        font-size: 12px;
+    }
+}
+
+h1 {
+    font-family: 'Didot', serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+/* .header{
+    padding-top: 25px;
+} */
+
+@media only screen and (max-width: 600px) {
+    .modal-content{
+        position: relative;
+        max-width: 83% !important;
+        background: white;
+    }
+    }

@@ -1,0 +1,116 @@
+
+
+.mat-typography {
+  font: 400 14px / 20px 'Dior', Roboto, "Helvetica Neue", sans-serif; 
+}
+
+
+.feature-row__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.feature-row__text {
+  padding: 20px;
+}
+.feature-row__text--right {
+  text-align: right;
+}
+.feature-row__text--left {
+  text-align: left;
+}
+.image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.image-wrap img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 767.98px) {
+  .feature-row__text--right,
+  .feature-row__text--left {
+    text-align: center;
+  }
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+.h5{
+  text-transform: uppercase;
+    letter-spacing: .3em;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.h3{
+  font-family:'Didot', serif;
+    font-weight: 600;
+    letter-spacing: 0em;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 25px;
+    
+}
+
+p{
+  display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+}
+
+.mat-typography {
+  font: 400 14px / 20px Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.heading{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: fixed;
+  left: 45%;
+  margin: 10px 0;
+  display: block;
+  font-size: 30px;
+  z-index: 6;
+  
+}
+
+@media (max-width: 480px) {
+  .heading{
+    left: 25%;
+  }
+}
+
+.hidden {
+  display: none;
+} 
+
+body, html {
+  overflow-x: hidden;
+}
+
+.page-width {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.col-md-6 {
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}

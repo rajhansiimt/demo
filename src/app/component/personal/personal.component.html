@@ -1,0 +1,47 @@
+<div [class.hidden]="!isVisible" *ngIf="pageData">
+  <div id="shopify-section-1593975143673" class="shopify-section index-section">
+    <div class="page-width">
+      <div class="row pt-5 mt-5">
+        <!-- Left Column: Text -->
+        <div class="col-md-6 pt-5 mt-5">
+          <div class="feature-row__item feature-row__text feature-row__text--right">
+            <p class="h3 text-center" style="margin: 0px 50px;">{{ pageData.titleMain }}</p>
+            <div class="rte featured-row__subtext">
+              <p>{{ pageData.description }}</p>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: Image -->
+        <div class="col-md-6 pt-5">
+          <div class="feature-row__item">
+            <div style="margin: 0 auto; max-width: 500px;">
+              <div class="image-wrap" style="height: 0; padding-bottom: 80%;">
+                <img class="feature-row__image" [src]="environment.backendUrl +  pageData.mainImage" alt="Main Image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Left Column: Image -->
+        <div class="col-md-6 pt-5 mt-5">
+          <div class="feature-row__item">
+            <div style="margin: 0 auto; max-width: 500px;">
+              <div class="image-wrap" style="height: 0; padding-bottom: 66.6667%;">
+                <img class="feature-row__image" [src]="environment.backendUrl +  pageData.subImage" alt="Sub Image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right Column: Text -->
+        <div class="col-md-6 pt-5 mt-5">
+          <div class="feature-row__item feature-row__text feature-row__text--left">
+            <p class="h5">{{ pageData.titleSub }}</p>
+            <p class="h3">{{ pageData.interviewTitle }}</p>
+            <div class="rte featured-row__subtext">
+              <p>{{ pageData.interviewQuote }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

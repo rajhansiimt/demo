@@ -1,0 +1,27 @@
+<div class="fashion-page" [class.hidden]="!isVisible">
+  <!-- <div class="header mb-5">
+    <h2 class="text-center">Covers Collection</h2>
+  </div> -->
+
+  <section class="fashion-content">
+    <!-- <h2 class= "text-center">Explore the Latest Fashion Trends</h2>
+    <p class="text-center">{{ pageDescription }}</p> -->
+
+    <!-- <div class="container"> -->
+      <div class="masonry">
+        <div *ngFor="let image of fashionItems; let i = index" class="brick" (click)="openModal(i)">
+          <img [src]="environment.backendUrl +  image.image" alt="Gallery Image">
+        </div> 
+      </div>
+    <!-- </div> -->
+  </section>
+
+  <div class="modal" *ngIf="selectedImage" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <img [src]="environment.backendUrl + selectedImage" alt="Preview Image">
+      <button class="prev" (click)="prevImage($event)" [disabled]="!fashionItems.length">&#10094;</button>
+      <button class="next" (click)="nextImage($event)" [disabled]="!fashionItems.length">&#10095;</button>
+    </div>
+  </div>
+</div>

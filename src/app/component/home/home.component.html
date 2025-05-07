@@ -1,0 +1,42 @@
+<div class="fashion-page" [class.hidden]="!isVisible">
+  <div class="empty" style="height: 15px;"></div>
+  <!-- Video Section -->
+  <div class="video-section"  *ngIf="videoSource">
+    <video #backgroundVideo class="background-media" autoplay muted loop playsinline preload="auto">
+      <source [src]="environment.backendUrl + videoSource" type="video/mp4">
+    </video>
+  </div>
+  
+
+  <p class="heading pt-5 mt-5">Explore Gallery</p>
+
+  <!-- Architecture Category -->
+  <div class="category mt-5 pt-5">
+    <div class="masonry">
+      <div *ngFor="let image of fashionItems; let i = index" class="brick" (click)="openModal(i)">
+        <img [src]="environment.backendUrl +  image.image" alt="Gallery Image">
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- <video #backgroundVideo class="background-media" autoplay muted loop playsinline preload="auto">
+      <source [src]="environment.backendUrl + videoSource" type="video/mp4">
+    </video>
+  
+    <video
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto"
+    width="100%"
+    height="auto"
+    style="max-width: 100%; display: block;"
+  >
+    <source [src]="environment.backendUrl + videoSource" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video> -->
+  
+
+</div>

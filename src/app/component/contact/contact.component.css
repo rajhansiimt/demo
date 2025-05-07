@@ -1,0 +1,134 @@
+/* Contact Section Styling */
+#contacts {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background color */
+    overflow-x: hidden; /* Prevent horizontal scroll in this section */
+}
+
+/* Contact Form Card */
+.contact-card {
+    background-color: #ffffff;
+    border-radius: 1    5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Form Input Fields */
+.contact-card .form-label {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.contact-card input.form-control,
+.contact-card textarea.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+.contact-card input.form-control:focus,
+.contact-card textarea.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-card .btn {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 12px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contact-card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Error Styling for Invalid Fields */
+.contact-card .text-danger {
+    font-size: 0.875rem;
+    color: #dc3545; /* Red color for error messages */
+}
+
+/* Social Links Card */
+.contact-card .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-card .row a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-card .row a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.contact-card .icon {
+    margin-right: 8px;
+    transition: color 0.3s;
+}
+
+.contact-card .icon:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #contacts {
+        padding: 30px 15px;
+    }
+
+    .contact-card {
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    .contact-card .card-body {
+        padding: 20px;
+    }
+
+    .contact-card .form-control {
+        font-size: 0.9rem;
+    }
+
+    .contact-card .btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-card .row a {
+        font-size: 16px;
+    }
+
+    .contact-card .icon {
+        font-size: 1.2rem;
+    }
+
+    .contact-card .card-body {
+        padding: 15px;
+    }
+
+    .contact-card .btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+.hidden {
+    display: none;
+  } 

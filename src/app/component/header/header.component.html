@@ -1,0 +1,48 @@
+<div class="header" style="position: fixed;">
+  <!-- Your header content here -->
+   <div class="logo">
+    <img src="../../../assets/images/logo_imagee.png" alt="Example Image" width="500px; height=650px">
+   </div>
+  <div class="button_container" (click)="toggleMenu()" [class.active]="menuService.isMenuOpen$ | async" >
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+  </div>
+</div>  
+
+<div class="overlay" [class.open]="menuService.isMenuOpen$ | async">
+  <nav class="overlay-menu">
+    <!-- Portfolio heading at the top -->
+    <!-- <div class="menu-title">
+      <p class="custom-font" style="font-size: 50px;"><span>Portfolio</span></p>
+    </div>   -->
+  
+    <ul class="custom-font">
+      <li>
+        <a class="custom-font" (click)="navigateAndCloseMenu('/home')" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      </li>
+      <li>
+        <a class="custom-font" (click)="navigateAndCloseMenu('/fashion')" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Fashion</a>
+      </li>
+      <li>
+        <a class="custom-font" (click)="navigateAndCloseMenu('/commercial')" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Commercial</a>
+      </li>
+      <li>  
+        <a class="custom-font" (click)="navigateAndCloseMenu('/cover')" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Covers</a>
+      </li>
+      <li>
+        <a class="custom-font" (click)="navigateAndCloseMenu('/beauty')" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Beauty</a>
+      </li>
+      <li>
+        <a class="custom-font" (click)="navigateAndCloseMenu('/personal')" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Personal</a>
+      </li>
+      <li>
+        <a class="custom-font" (click)="navigateAndCloseMenu('/contact')" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Contact</a>
+      </li>
+      <li>
+        <a class="custom-font" (click)="navigateAndCloseMenu('/about')" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">About</a>
+      </li>
+    </ul>
+  </nav>
+  
+</div>

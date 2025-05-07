@@ -1,0 +1,7 @@
+<app-header></app-header>
+
+<!-- Hide router-outlet when menu is open -->
+<div [class.hidden]="menuService.isMenuOpen$ | async">
+  <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>
